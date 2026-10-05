@@ -780,7 +780,7 @@ function regionSketchSVG(kind){
  }else if(kind==='comparative'){
   box(14,25,141,94,'Avian embryos','Avian embryos');box(165,25,141,94,'Fish embryos / larvae','Fish embryos / larvae');label('Origin · attachment · muscle activity','Origin · attachment · muscle activity',160,149,288,11);note('Cross-species comparisons do not directly transfer conclusions','Cross-species comparisons do not directly transfer conclusions');
  }else{
-  box(14,32,92,112,'Source and site','Source and site');box(114,32,92,112,'Local interactions','Local interactions');box(214,32,92,112,'Tissue output','Tissue output');note('Review frameworks require checking original studies','Review frameworks require checking original studies');
+  box(14,32,92,112,'Source and site','Source and site');box(114,32,92,112,'Local interaction','Local interaction');box(214,32,92,112,'Tissue output','Tissue output');note('Review frameworks require checking original studies','Review frameworks require checking original studies');
  }
  return `<svg class="local-diagram" viewBox="0 0 320 220" role="img" aria-labelledby="region-local-title region-local-desc"><title id="region-local-title">${esc(REGIONS[S.studyRegion].name)} ${visualText('local concept diagram','local concept diagram')}</title><desc id="region-local-desc">${visualText('Adjacent tissue concepts, not measured cell coordinates or a unified lineage.','Adjacent tissue concepts, not measured cell coordinates or a unified lineage.')}</desc><g class="diagram-shapes">${shapes}</g><g class="diagram-labels">${labels}</g></svg>`;
 }
