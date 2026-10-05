@@ -263,6 +263,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
 @media(max-width:960px){.system-choice strong{font-size:15px}.system-choice span{font-size:12px}.system-chart{height:445px}}
 @media(max-width:760px){.system-chart{height:auto}.system-choice{min-height:114px}.system-choice strong{font-size:14px}.region-system-actions{max-width:none}.region-system-jump{align-items:flex-start}.detail h2{font-size:20px}.hotspot text{font-size:11px}.systems-heading h2{font-size:23px}}
 @media print{.system-chart{height:auto}}
+@media(max-width:760px){.themes{max-width:100%;flex-wrap:wrap}.theme{white-space:normal;text-align:left}.scope-tabs{flex-wrap:wrap}.system-head .btn{white-space:normal}}
 
 </style>
 </head>
@@ -2130,7 +2131,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
     {
       "id": "R03",
       "group": "cells",
-      "headline": "Fat4-enriched population provides the alveolar bone with an autologous osteoblast framework.",
+      "headline": "A Fat4-enriched population supports a site-specific model of alveolar osteogenic cells.",
       "nodes": [
         {
           "label": "Fat4-enriched population",
@@ -4057,10 +4058,10 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
     {
       "id": "R53",
       "group": "cells",
-      "headline": "SOX9 decreases during the establishment of extraocular muscle attachments; mature structures require local verification.",
+      "headline": "SOX9 decreases as the lateral pterygoid attachment forms; mature structure must be checked at this specific site.",
       "nodes": [
         {
-          "label": "Extraocular muscle attachment",
+          "label": "Lateral pterygoid attachment",
           "sub": "Condylar neck and wing muscle fossa",
           "key": "interface"
         },
@@ -4809,7 +4810,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
     {
       "id": "R69",
       "group": "cells",
-      "headline": "Position of jaw-hyoid muscle attachments changes with intramembranous bone extension.",
+      "headline": "The mylohyoid attachment shifts as intramembranous bone extends.",
       "nodes": [
         {
           "label": "Meckel-adjacent attachment",
@@ -4843,7 +4844,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
           "reverse": false
         }
       ],
-      "model": "Mouse · Embryonic stage · E13.5–E17.5; jaw-hyoid muscle attachment sites",
+      "model": "Mouse · Embryonic · E13.5–E17.5; mylohyoid attachment",
       "site": "Mouse | Embryonic stage: E13.5–E17.5; mylohyoid muscle attachment sites",
       "clinical": "Helps distinguish different muscle attachment developmental paths; disease treatment not tested.",
       "outcome": "Normal biology",
@@ -6375,7 +6376,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
       "short": "Why does this tissue form here",
       "number": "02",
       "stage": "Developmental segmentation also involves homeostasis",
-      "question": "Why can the same piece of interstitial mesenchyme form bone, cartilage, tendon, and non-mineralized interfaces in different regions?",
+      "question": "Why does the same mesenchyme form bone, cartilage, tendon and non-mineralized interfaces in different regions?",
       "claim": "Tissue fate, local environment, and boundaries need to be explained regionally; one marker or one ossification method cannot generalize the entire jaw.",
       "claims": [
         "Different segments of Meckel's cartilage can undertake different tasks.",
@@ -6455,7 +6456,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
       "question": "How function, local forces, and tissue remodeling jointly alter size, shape, and spatial position.",
       "claim": "Structure affects load, and load also affects tissue; early forces within cells and tissues should be separated from later mastication and external loads.",
       "claims": [
-        "Local formation/resorption and orthognathic displacement are different scales.",
+        "Local bone formation/resorption and displacement of the whole bone occur at different scales.",
         "The same load change may produce different results in different regions."
       ],
       "unknown": "Who generates the force, how it is transmitted, which cells receive it, and which function is ultimately changed?",
@@ -7993,7 +7994,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
     "claim": "Induced traces show that Gli1-labeled cells near the subchondral/cartilaginous junction participate in bone formation, and the contribution of offspring after fractures differs from that of homeostasis.",
     "evidence": [
       "Gli1-CreER tracer",
-      "Reporting and organizational co-contamination",
+      "Reporter labeling and tissue co-staining",
       "Cultivation and WNT intervention",
       "Fracture model"
     ],
@@ -8021,7 +8022,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
           "mouse"
         ],
         "speciesLabel": "Mouse",
-        "stageLabel": "Fracture group is to be diagnosed in days of age",
+        "stageLabel": "Age in the fracture group unconfirmed",
         "stageKeys": [
           "unknown"
         ],
@@ -8747,7 +8748,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
           "unknown"
         ],
         "condition": "In vitro stiffness pattern experiment",
-        "note": "P3 = third-generation cultured cells; not the third day after birth",
+        "note": "P3 = third-passage cultured cells; not the third day after birth",
         "conditionKeys": [
           "invitro"
         ]
@@ -9749,7 +9750,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
           "postnatal"
         ],
         "condition": "Cultured osteogenesis and IGF2 rescue",
-        "note": "Using second-generation cells for culture",
+        "note": "Using passage-2 cells for culture",
         "conditionKeys": [
           "invitro"
         ]
@@ -11446,7 +11447,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
         "stageKeys": [
           "adult"
         ],
-        "stageLabel": "Adulthood (primary generation cultivation 8–12 weeks)",
+        "stageLabel": "Adult donors: 8–12 weeks (primary cell culture)",
         "condition": "Zoned culture of anterior and posterior ligaments/cartilage; Partial sampling at 2 months of age",
         "note": "Age is based on the full text 4.2 and the result 2.6",
         "conditionKeys": [
@@ -14214,9 +14215,9 @@ function refHTML(){return `<div class="reference-grid">${Object.entries(REGIONS)
 function currentStudyConfig(){return REGION_STUDY.regions[S.studyRegion]||REGION_STUDY.regions.periosteum;}
 function localRegionStudies(){const cfg=currentStudyConfig();const rows=cfg.ids.map(id=>{const s=regionalById[id];return s&&cfg.groupOverrides?.[id]?{...s,group:cfg.groupOverrides[id]}:s}).filter(Boolean);if(cfg.order){const rank=Object.fromEntries(cfg.order.map((id,i)=>[id,i]));return rows.sort((a,b)=>(rank[a.id]??99)-(rank[b.id]??99));}return rows.sort((a,b)=>(byId[a.id].geo==='cn'?0:1)-(byId[b.id].geo==='cn'?0:1)||byId[b.id].year-byId[a.id].year||a.id.localeCompare(b.id));}
 function regionStudyGroups(){return currentStudyConfig().groups;}
-function regionOverviewHTML(cfg){return `<div class="region-reading"><h3>Put the studies of this site together, first look at three points</h3><p>${esc(cfg.intro)}</p><div class="region-links" style="--reading-count:${cfg.readings.length}">${cfg.readings.map(r=>`<div><h4>${esc(r.title)}</h4><p>${esc(r.text)}</p>${r.ids.filter(id=>!byId[id].preprint||S.showPreprints).map(id=>`<button class="btn small" data-open="${id}" aria-label="View paper:${esc(byId[id].title)}">${esc(byId[id].leadNames.split('、')[0])} · ${byId[id].year}${byId[id].preprint?" · Preprint":''}</button>`).join(' ')}</div>`).join('')}</div></div>`;}
+function regionOverviewHTML(cfg){return `<div class="region-reading"><h3>Three points to connect these studies</h3><p>${esc(cfg.intro)}</p><div class="region-links" style="--reading-count:${cfg.readings.length}">${cfg.readings.map(r=>`<div><h4>${esc(r.title)}</h4><p>${esc(r.text)}</p>${r.ids.filter(id=>!byId[id].preprint||S.showPreprints).map(id=>`<button class="btn small" data-open="${id}" aria-label="View paper:${esc(byId[id].title)}">${esc(byId[id].leadNames.split('、')[0])} · ${byId[id].year}${byId[id].preprint?" · Preprint":''}</button>`).join(' ')}</div>`).join('')}</div></div>`;}
 function regionSketchSVG(kind){if(kind==='periosteum')return regionLocalSVG();const start=`<svg viewBox="0 0 320 170" role="img" aria-labelledby="region-local-title region-local-desc"><title id="region-local-title">${esc(REGIONS[S.studyRegion].name)} Local Concept Illustration</title><desc id="region-local-desc">Used to distinguish adjacent tissues; does not depict actual cell coordinates, determine lineages, or general attachment hierarchy.</desc>`;const box=(x,y,w,h,t,fill='#eaf0e6')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="#c7d7c4"/><text x="${x+w/2}" y="${y+h/2+5}" text-anchor="middle" fill="#42654b" font-size="12">${esc(t)}</text>`;const note=(t,y=156)=>`<text x="160" y="${y}" text-anchor="middle" fill="#829083" font-size="10">${esc(t)}</text>`;let body='';
-if(kind==='marrow')body=box(16,21,288,29,"Bone surface/cortical bone",'#f0e6cb')+box(16,55,288,79,"Bone marrow cavity")+`<path d="M35 88C84 61 118 117 163 86S240 78 281 104" fill="none" stroke="#a4bdbc" stroke-width="10"/><text x="160" y="121" text-anchor="middle" fill="#54746a" font-size="11">Blood vessels and perivascular area</text>`+note("Cavity-associated populations and perivascular populations are localized separately");
+if(kind==='marrow')body=box(16,21,288,29,"Bone surface/cortical bone",'#f0e6cb')+box(16,55,288,79,"Bone marrow cavity")+`<path d="M35 88C84 61 118 117 163 86S240 78 281 104" fill="none" stroke="#a4bdbc" stroke-width="10"/><text x="160" y="121" text-anchor="middle" fill="#54746a" font-size="11">Blood vessels and perivascular area</text>`+note("Marrow and perivascular pools differ");
 else if(kind==='condyle')body=box(70,12,180,29,"Superficial layer/perichondrium")+box(55,46,210,44,"Cartilage tissue",'#dce9da')+box(68,96,184,37,"Subchondral bone",'#f0e6cb')+note("The joint attachment region is another local location");
 else if(kind==='attachment')body=box(14,25,89,50,S.studyRegion==='coronoid'?"Temporalis":"Muscle")+box(109,38,91,25,"Tendon/connection")+box(207,18,99,79,"Bone tissue",'#f0e6cb')+`<path d="M103 50H109M200 50H207" stroke="#8baa94" stroke-width="2"/>`+box(60,111,202,25,"Attached structures vary by location and stage",'#f6f3e9')+note("This diagram does not designate a uniform four-layer fibrocartilage structure");
 else if(kind==='arch')body=box(37,17,246,30,"First pharyngeal arch local mesenchyme")+box(26,57,125,68,"Oral-side region")+box(169,57,125,68,"Non-oral-side region")+note("Early regionalization is not adult anatomical coordinates");
@@ -14282,11 +14283,11 @@ function systemFrameworkHTML(){
   const ps=systemPapers(),studies=ps.filter(p=>p.kind!=="Review"),rank=Object.fromEntries(f.featured.map((id,i)=>[id,i]));
   studies.sort((a,b)=>(rank[a.id]??999)-(rank[b.id]??999)||b.year-a.year);
   const context=S.frameworkRegion!=='all',regionCount=Object.keys(REGIONS).filter(r=>systemPapers(f.id,r).length).length;
-  return `<section class="alt-view"><div class="systems-heading"><div><h2>Mandibular development, adaptation and repair</h2><p>Select a section to see the mainline, then view the corresponding site and research.</p></div>${context?`<div class="system-context-compact"><span>Focus:${esc(REGIONS[S.frameworkRegion].name)}</span><button class="btn small" data-system-open-region="${S.frameworkRegion}">Enter Site →</button><button class="btn icon" data-system-region="all" aria-label="Clear region focus">×</button></div>`:''}</div><div class="systems-layout"><section class="panel system-overview"><div class="system-chart-panel"><div class="system-chart-head"><h3>Five connected reading lenses ${helpButtonHTML("framework-chart","Five reading lenses")}</h3></div>${systemChartHTML()}<p class="system-chart-caption" id="system-relations-text">Source, region, and connection are interlinked; structure and load provide mutual feedback; repair is considered after injury. The diagram is a reading summary, not a unified lineage or strict chronological order.</p></div></section>${systemDetailHTML(f)}<section class="panel system-supplements"><details class="system-section system-locations" data-fold-key="system-${f.id}-regions" open><summary data-help="framework-regions">Study area <span>${regionCount} Location</span>${helpButtonHTML("framework-regions","Research sites")}</summary><div class="system-section-body"><label class="system-context-label">Focus on a region<select class="select" data-system-context><option value="all">All sites and references</option>${['jaw','embryo','reference'].map(scope=>`<optgroup label="${({jaw:"Mandibular regions",embryo:"Embryonic regions",reference:"Other sites and reviews"})[scope]}">${Object.entries(REGIONS).filter(([,r])=>r.scope===scope).map(([key,r])=>`<option value="${key}" ${S.frameworkRegion===key?'selected':''}>${esc(r.name)}</option>`).join('')}</optgroup>`).join('')}</select></label><p class="system-fold-help">Select literature focusing on the area; selected areas can also directly enter the study diagram.</p>${context?`<div class="system-context-note"><span>${esc(REGIONS[S.frameworkRegion].name)}</span><button class="btn small" data-system-open-region="${S.frameworkRegion}">Enter study diagram →</button><button class="system-jump-link" data-system-map="${S.frameworkRegion}">Locate on anatomy</button></div>`:''}${systemRegionsHTML()}${systemAnatomyHTML()}<details class="reading-fold" data-fold-key="system-background" open><summary>Other shared background</summary><div class="reading-fold-body"><p>Signals from epithelium and neighboring tissues, nerves, blood vessels, and local microenvironment also participate in the above processes; their roles are verified by area, period, and model.</p></div></details></div></details><details class="system-section system-research" data-fold-key="system-${f.id}-${S.frameworkRegion}-papers" open><summary data-help="framework-papers">Related studies <span>${studies.length} Item</span>${helpButtonHTML("framework-papers","Related studies")}</summary><div class="system-section-body"><div class="system-list-heading"><span>${esc(f.name)}${context?' · '+esc(REGIONS[S.frameworkRegion].name):''}</span><button class="btn small" data-action="export-csv">Export references</button></div><p class="system-fold-help">Representative studies are listed first; click the title to see claims, models, and evidence. Review references are in the explanation section.</p><div class="system-paper-list">${studies.length?studies.map(systemPaperHTML).join(''):`<div class="system-empty"><p>No original studies have been recorded under current conditions.</p>${context?"<button class=\"btn\" data-system-region=\"all\">Clear region focus</button>":''} <button class="btn" data-action="reset">Clear filters</button></div>`}</div></div></details><details class="system-section system-tools" data-fold-key="system-tools" open><summary data-help="framework-tools">Six types of evidence issues in cell research ${helpButtonHTML("framework-tools","Six types of evidence issues")}</summary><div class="system-section-body"><p class="system-fold-help">Overall framework explains tissue processes; the following six issues help determine what cells a paper defines. They should not be linked into a lineage tree.</p><div class="framework-grid">${Object.entries(LEVELS).map(([k,d])=>`<article class="level-card"><div class="level-num">Question ${d.n}</div><h3>${d.name}</h3><p>${d.desc}</p><div class="danger">${d.warn}</div><button class="btn" data-level="${k}">View related studies · ${PAPERS.filter(p=>(!p.preprint||S.showPreprints)&&p.levels.includes(k)).length} Item ↗</button></article>`).join('')}</div>${periosteumHTML()}</div></details></section></div></section>`;
+  return `<section class="alt-view"><div class="systems-heading"><div><h2>Mandibular development, adaptation and repair</h2><p>Select a lens, then explore its regions and studies.</p></div>${context?`<div class="system-context-compact"><span>Focus:${esc(REGIONS[S.frameworkRegion].name)}</span><button class="btn small" data-system-open-region="${S.frameworkRegion}">Open region →</button><button class="btn icon" data-system-region="all" aria-label="Clear region focus">×</button></div>`:''}</div><div class="systems-layout"><section class="panel system-overview"><div class="system-chart-panel"><div class="system-chart-head"><h3>Five connected reading lenses ${helpButtonHTML("framework-chart","Five reading lenses")}</h3></div>${systemChartHTML()}<p class="system-chart-caption" id="system-relations-text">Source, region, and connection are interlinked; structure and load provide mutual feedback; repair is considered after injury. The diagram is a reading summary, not a unified lineage or strict chronological order.</p></div></section>${systemDetailHTML(f)}<section class="panel system-supplements"><details class="system-section system-locations" data-fold-key="system-${f.id}-regions" open><summary data-help="framework-regions">Study area <span>${regionCount} Location</span>${helpButtonHTML("framework-regions","Research sites")}</summary><div class="system-section-body"><label class="system-context-label">Focus on a region<select class="select" data-system-context><option value="all">All sites and references</option>${['jaw','embryo','reference'].map(scope=>`<optgroup label="${({jaw:"Mandibular regions",embryo:"Embryonic regions",reference:"Other sites and reviews"})[scope]}">${Object.entries(REGIONS).filter(([,r])=>r.scope===scope).map(([key,r])=>`<option value="${key}" ${S.frameworkRegion===key?'selected':''}>${esc(r.name)}</option>`).join('')}</optgroup>`).join('')}</select></label><p class="system-fold-help">Select literature focusing on the area; selected areas can also directly enter the study diagram.</p>${context?`<div class="system-context-note"><span>${esc(REGIONS[S.frameworkRegion].name)}</span><button class="btn small" data-system-open-region="${S.frameworkRegion}">Enter study diagram →</button><button class="system-jump-link" data-system-map="${S.frameworkRegion}">Locate on anatomy</button></div>`:''}${systemRegionsHTML()}${systemAnatomyHTML()}<details class="reading-fold" data-fold-key="system-background" open><summary>Other shared background</summary><div class="reading-fold-body"><p>Signals from epithelium and neighboring tissues, nerves, blood vessels, and local microenvironment also participate in the above processes; their roles are verified by area, period, and model.</p></div></details></div></details><details class="system-section system-research" data-fold-key="system-${f.id}-${S.frameworkRegion}-papers" open><summary data-help="framework-papers">Related studies <span>${studies.length} Item</span>${helpButtonHTML("framework-papers","Related studies")}</summary><div class="system-section-body"><div class="system-list-heading"><span>${esc(f.name)}${context?' · '+esc(REGIONS[S.frameworkRegion].name):''}</span><button class="btn small" data-action="export-csv">Export references</button></div><p class="system-fold-help">Representative studies are listed first; click the title to see claims, models, and evidence. Review references are in the explanation section.</p><div class="system-paper-list">${studies.length?studies.map(systemPaperHTML).join(''):`<div class="system-empty"><p>No original studies have been recorded under current conditions.</p>${context?"<button class=\"btn\" data-system-region=\"all\">Clear region focus</button>":''} <button class="btn" data-action="reset">Clear filters</button></div>`}</div></div></details><details class="system-section system-tools" data-fold-key="system-tools" open><summary data-help="framework-tools">Six types of evidence issues in cell research ${helpButtonHTML("framework-tools","Six types of evidence issues")}</summary><div class="system-section-body"><p class="system-fold-help">Overall framework explains tissue processes; the following six issues help determine what cells a paper defines. They should not be linked into a lineage tree.</p><div class="framework-grid">${Object.entries(LEVELS).map(([k,d])=>`<article class="level-card"><div class="level-num">Question ${d.n}</div><h3>${d.name}</h3><p>${d.desc}</p><div class="danger">${d.warn}</div><button class="btn" data-level="${k}">View related studies · ${PAPERS.filter(p=>(!p.preprint||S.showPreprints)&&p.levels.includes(k)).length} Item ↗</button></article>`).join('')}</div>${periosteumHTML()}</div></details></section></div></section>`;
 }
 function regionSystemHTML(){
   const r=SYSTEMS.regions[S.studyRegion],all=regionSystems(),selected=S.studyFramework!=='all',list=regionStudyList().filter(s=>S.studyGroup==='all'||s.group===S.studyGroup),target=selected?S.studyFramework:r.main[0];
-  return `<details class="region-system-locator" data-fold-key="region-${S.studyRegion}-framework" open><summary data-help="region-framework">This area and overall framework <span>${all.length} Individual frameworks ${selected?" · Filter active":''}</span>${helpButtonHTML("region-framework","This region in the wider picture")}</summary><div class="region-system-inner"><div class="region-system-text"><p>${esc(r.text)}</p><p class="region-system-instruction">Point framework filters research for this area; go to overall diagram to see its segment.</p></div><div class="region-system-actions"><div class="region-system-filter"><span class="region-action-label">Filter studies in this region</span><div class="system-tags"><button class="system-tag" data-study-system="all" aria-pressed="${!selected}">All <span>${list.length} Item</span></button>${all.map(key=>`<button class="system-tag" data-study-system="${key}" aria-pressed="${S.studyFramework===key}">${esc(SYSTEM_BY_ID[key].name)} <span>${list.filter(s=>paperHasSystem(s.id,key)).length} Item</span></button>`).join('')}</div></div><div class="region-system-jump"><span class="region-action-label">${esc(SYSTEM_BY_ID[target].name)}</span><button class="btn small" data-system="${target}" data-system-from-region="${S.studyRegion}" data-help="region-jump">Locate in overall diagram ↗</button></div></div></div></details>`;
+  return `<details class="region-system-locator" data-fold-key="region-${S.studyRegion}-framework" open><summary data-help="region-framework">This region in the wider picture <span>${all.length} linked lenses ${selected?" · Filter active":''}</span>${helpButtonHTML("region-framework","This region in the wider picture")}</summary><div class="region-system-inner"><div class="region-system-text"><p>${esc(r.text)}</p><p class="region-system-instruction">Choose a lens to filter this region; choose “Locate in overview” to see the wider picture.</p></div><div class="region-system-actions"><div class="region-system-filter"><span class="region-action-label">Filter studies in this region</span><div class="system-tags"><button class="system-tag" data-study-system="all" aria-pressed="${!selected}">All <span>${list.length} Item</span></button>${all.map(key=>`<button class="system-tag" data-study-system="${key}" aria-pressed="${S.studyFramework===key}">${esc(SYSTEM_BY_ID[key].name)} <span>${list.filter(s=>paperHasSystem(s.id,key)).length} Item</span></button>`).join('')}</div></div><div class="region-system-jump"><span class="region-action-label">${esc(SYSTEM_BY_ID[target].name)}</span><button class="btn small" data-system="${target}" data-system-from-region="${S.studyRegion}" data-help="region-jump">Locate in overview ↗</button></div></div></div></details>`;
 }
 function concisePaperHTML(p){
   const m=SYSTEMS.papers[p.id],reg=S.view==='region'?S.studyRegion:S.view==='framework'?S.frameworkRegion:'all';
