@@ -1675,7 +1675,7 @@
         "id": "R33",
         "group": "repair",
         "headline": "PLAGL1 and KLF4 co-regulate IRX5, and intervention further improves regeneration.",
-        "model": "Adult mice · Mandible defect regeneration",
+        "model": "Two-month-old mice: Irx5 rescue and mandibular defects (Figs. 7–8); demethylation intervention separately in Fig. 9",
         "site": "Adult mandible defects and periosteal progenitor cells; not a fixed masticatory muscle attachment site location.",
         "nodes": [
           {
@@ -6034,7 +6034,7 @@
         "group": "repair",
         "headline": "In mouse distraction, local skeletal stem cells activate a neural-crest-like program through FAK-associated mechanotransduction.",
         "model": "Mouse mandibular distraction, fracture controls and skeletal stem-cell analysis",
-        "site": "Distraction differs from physiological mastication and is not periosteum-specific lineage evidence. A neural-crest-like state does not alter embryonic origin.",
+        "site": "Mouse mandibular distraction gap and isolated skeletal stem cells; comparison with fracture",
         "nodes": [
           {
             "label": "Mandibular distraction",
@@ -6087,7 +6087,7 @@
         "group": "cells",
         "headline": "Mouse dental mesenchyme forms spatiotemporal domains; tracing and genetic experiments support tissue contributions and periodontal differentiation.",
         "model": "Mouse molar development atlas, staged tracing and Foxp4 conditional loss",
-        "site": "A dental and periodontal model, not a whole-mandible classification. Foxp4 loss affects periodontal tissue without a significant root-length change.",
+        "site": "Mouse molar dental papilla, follicle and root-furcation periodontal tissues",
         "nodes": [
           {
             "label": "Dental mesenchyme",
@@ -11325,12 +11325,12 @@
             "mouse"
           ],
           "speciesLabel": "Mouse",
-          "stageLabel": "Adult (exact age to be confirmed)",
+          "stageLabel": "Two months old (Irx5 rescue / defect experiments)",
           "stageKeys": [
             "adult"
           ],
           "condition": "Mandibular defect and periosteal cell experiments",
-          "note": "Including gene manipulation and targeted demethylation interventions",
+          "note": "Age checked for Figs. 7–8; ages in other experiments must be checked separately.",
           "conditionKeys": [
             "injury",
             "invitro"
@@ -11338,8 +11338,8 @@
         }
       ],
       "modelMetadataSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13385907/",
-      "modelMetadataNote": "List of major models; unverified ages are noted.",
-      "modelMetadataChecked": "2026-10-03; original records, abstract, and listed methods sections",
+      "modelMetadataNote": "The two-month model in Figs. 7–8 is synchronized here. Fig. 9 intervention and POD14 endpoint remain separate; this age is not assigned to every experiment.",
+      "modelMetadataChecked": "2026-10-05",
       "leadRole": "Corresponding author",
       "leadNames": "Xinquan Jiang, Jiahui Du, Sihan Lin",
       "clinical": "Gene function and targeted demethylation interventions support mandibular regeneration; this is evidence of animal defect repair and has not yet proven that growth malformations or patient diseases can be cured.",
@@ -18552,7 +18552,7 @@
     }
   ],
   "revision-data": {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "date": "2026-10-05",
     "labels": {
       "copyTextLabel": "Text to copy",
@@ -18609,7 +18609,8 @@
       "readingRecorded": "Recorded reading scope; review date not recorded",
       "frameworkOnly": "Framework source; not direct experimental localization at an anatomical hotspot.",
       "corePending": "Individual claims are not yet linked to source experiments; consult the existing evidence notes and original source."
-    }
+    },
+    "visualLanguage": "en"
   },
   "embedded-discussion": {
     "ids": [],

@@ -1,5 +1,14 @@
 # Changes
 
+## 1.1.1 — 5 October 2026
+
+- Reworked shared local diagrams across all 18 navigation categories: labels occupy separate bands from vessel/texture graphics, and long labels and scope notes wrap within their frames.
+- Allowed long author and reference buttons to wrap on narrow screens; improved local-diagram label contrast.
+- Corrected the misleading Review entry theme label on cross-topic studies, synchronized the checked two-month R33 experimental context without assigning it to all experiments, and separated actual R95/R96 sites from conclusion limits.
+- Cleared stale citation-copy feedback between papers and guarded asynchronous feedback against a changed dialog context.
+- Made map label hit areas independent of decorative leader lines, retained separate clickable marker areas and changed interactive-map containers to semantic groups.
+- Protected author-name fields from browser translation. Automatic translation of scientific prose can still be inaccurate; this does not constitute a validated translated edition.
+
 ## 1.1.0 — 5 October 2026
 
 - Added R95 (mandibular distraction and neural-crest-like cell state) and R96 (dental mesenchymal domains and periodontal differentiation).
