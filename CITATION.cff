@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this version of the map when reusing its original organization or summaries; cite original studies for scientific claims."
+title: "Mandibular Development and Repair: Interactive Literature Map"
+type: software
+authors:
+  - name: "XYL"
+version: 1.1.0
+date-released: 2026-10-05
+url: "https://xuli500177.github.io/mandibular-literature-map/"
+repository-code: "https://github.com/xuli500177/mandibular-literature-map"
+license: MIT
+abstract: "A focused, curated literature guide connecting anatomy, individual studies and five reading lenses; not an exhaustive systematic review or clinical treatment guidance."
