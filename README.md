@@ -22,6 +22,14 @@ Start with a region on the mandibular diagram, compare what different studies ex
 
 Hover over help markers for explanations. A study can belong to more than one lens. The lenses are an editorial reading aid, not a claim that the field has one unified theory or that every cell population fits a single hierarchy.
 
+## Three-step demonstration
+
+| Find studies by anatomy | Compare studies in one region | Locate them in the wider picture |
+| --- | --- | --- |
+| ![Mandibular anatomy and a selected study](assets/01-anatomy.png) | ![Two periosteal studies with different questions and evidence](assets/02-studies.png) | ![Body periosteum linked to four of the five reading lenses](assets/03-lenses.png) |
+
+These illustrations show real interface states. Click an image to read the larger version, or [open the interactive map](https://xuli500177.github.io/mandibular-literature-map/) to explore the studies and their original sources.
+
 ## Scope and provenance
 
 This is a **curated literature guide**, not an exhaustive systematic review, a measured spatial cell atlas or a source of clinical treatment recommendations. A mandibular schematic helps navigation; hotspots do not represent measured cell coordinates. References involving other bones, species or tissues are comparison evidence, not direct proof about the human mandible.
