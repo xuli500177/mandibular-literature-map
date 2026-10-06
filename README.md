@@ -2,7 +2,7 @@
 
 An interactive literature map connecting **anatomical regions, individual studies and five reading lenses**.
 
-**[Open the map](https://xuli500177.github.io/mandibular-literature-map/)** · Version **1.1.1** · [Changes](CHANGELOG.md)
+**[Open the map](https://xuli500177.github.io/mandibular-literature-map/)** · Version **1.1.2** · [Changes](CHANGELOG.md)
 
 Current coverage emphasizes local cell populations, periosteum, condyle and tendon–muscle–bone interactions. Dental–periodontal, neurovascular, immune and some repair themes remain partial. Fewer records in a region indicate map coverage, not absence of research.
 

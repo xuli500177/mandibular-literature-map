@@ -1,5 +1,11 @@
 # Changes
 
+## 1.1.2 — 6 October 2026
+
+- Fixed map leader lines that inherited SVG's default black fill after the click-area change in 1.1.1. Leader paths now declare no fill and a thin muted stroke directly, with matching styles for their new container.
+- Used quiet rounded labels and outlined numbered markers; hover and keyboard focus highlight the corresponding connection. Tendon/muscle markers retain their warm accent.
+- Hiding anatomical navigation now hides the full label, leader and marker group together. Label and marker click targets remain separate from decorative lines.
+
 ## 1.1.1 — 5 October 2026
 
 - Reworked shared local diagrams across all 18 navigation categories: labels occupy separate bands from vessel/texture graphics, and long labels and scope notes wrap within their frames.

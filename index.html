@@ -281,6 +281,26 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
 /* Match the accepted detail typography; keep secondary labels readable. */
 .claim-unit dl{font-size:13px;line-height:1.6}.claim-unit dt,.claim-unit .note-status,.assessment-line span,.assessment-line small,.revision-sort,.revision-comparison-note,.revision-scope{color:#536b63}.revision-copy-status{font-size:13px;color:#36584b;padding:8px 18px;margin:0}.claim-model-tags .badge{white-space:normal;max-width:100%}@media print{.revision-actions,.revision-scope-actions,.revision-copy-status{display:none!important}}
 .region-links>div,.region-reading,.region-reference-links,.study-identity,.study-diagram,.study-result{min-width:0}.region-links .btn,.region-reference-links .btn,.region-study-actions .btn,.detail-actions .btn,.system-region-actions .btn{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:left}.region-links .btn+.btn{margin-left:0}.region-reference-links{display:flex;flex-wrap:wrap;gap:6px}.hotspot-scaffold>.leader{pointer-events:none}.hotspot-anchor{cursor:pointer}.hotspot-anchor .halo{fill:#f8fcf700;stroke:#74a682;stroke-width:1.1}.hotspot-anchor .anchor{fill:#266554;stroke:#fff;stroke-width:2}.hotspot-anchor .n{fill:white;font-size:11px;text-anchor:middle;dominant-baseline:middle;pointer-events:none}.hotspot:focus-visible .hotbox{stroke:var(--teal);stroke-width:3}.local-diagram{overflow:visible}.diagram-labels{pointer-events:none}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline-color:var(--teal)}@media(max-width:600px){.region-reference-links .btn,.region-study-actions .btn{flex:1 1 auto}.region-links .btn{justify-content:flex-start}.region-local svg{max-width:320px}}
+.hotspot-scaffold>.leader{fill:none;stroke:#90a99b;stroke-width:1.2;stroke-dasharray:3 4;stroke-linecap:round;stroke-linejoin:round;opacity:.85;vector-effect:non-scaling-stroke;pointer-events:none}
+.hotspot-scaffold.tissue>.leader{stroke:#b49b78}
+.hotspot-scaffold .hotbox{fill:#fcfdf9;fill-opacity:.95;stroke:#d6e1d6;stroke-width:.8}
+.hotspot-scaffold.tissue .hotbox{fill:#fdfbf7;stroke:#e5dccd}
+.hotspot-scaffold .hotspot-anchor .anchor{fill:#fff;stroke:var(--teal);stroke-width:1.8;transition:fill .15s,stroke .15s}
+.hotspot-scaffold .hotspot-anchor .n{fill:var(--teal);font-size:10px;font-weight:750}
+.hotspot-scaffold .hotspot-anchor .halo{fill:var(--teal);stroke:none;opacity:0;pointer-events:none}
+.hotspot-scaffold.tissue .hotspot-anchor .anchor{stroke:var(--amber)}
+.hotspot-scaffold.tissue .hotspot-anchor .n{fill:var(--amber)}
+.hotspot-scaffold.tissue .hotspot-anchor .halo{fill:var(--amber)}
+.hotspot-scaffold:hover>.leader,.hotspot-scaffold:focus-within>.leader,.hotspot-scaffold:has(>.hotspot.active)>.leader{stroke:var(--teal);stroke-width:1.5;stroke-dasharray:none;opacity:1}
+.hotspot-scaffold:hover .hotbox,.hotspot-scaffold:focus-within .hotbox{fill:#f1f6ef;stroke:#90b2a0}
+.hotspot-scaffold:hover .hotspot-anchor .anchor,.hotspot-scaffold:focus-within .hotspot-anchor .anchor,.hotspot-scaffold:has(>.hotspot.active) .hotspot-anchor .anchor{fill:var(--teal);stroke:var(--teal)}
+.hotspot-scaffold:hover .hotspot-anchor .n,.hotspot-scaffold:focus-within .hotspot-anchor .n,.hotspot-scaffold:has(>.hotspot.active) .hotspot-anchor .n{fill:#fff}
+.hotspot-scaffold:hover .hotspot-anchor .halo,.hotspot-scaffold:focus-within .hotspot-anchor .halo,.hotspot-scaffold:has(>.hotspot.active) .hotspot-anchor .halo{opacity:.1}
+.hotspot-scaffold.tissue:hover>.leader,.hotspot-scaffold.tissue:focus-within>.leader,.hotspot-scaffold.tissue:has(>.hotspot.active)>.leader{stroke:var(--amber)}
+.hotspot-scaffold.tissue:hover .hotspot-anchor .anchor,.hotspot-scaffold.tissue:focus-within .hotspot-anchor .anchor,.hotspot-scaffold.tissue:has(>.hotspot.active) .hotspot-anchor .anchor{fill:var(--amber);stroke:var(--amber)}
+.hotspot-scaffold:has(>.hotspot.dim)>.leader{opacity:.2}.hotspot-scaffold:has(>.hotspot.dim)>.hotspot-anchor{opacity:.3}
+.hotspot-scaffold:has(>.hotspot.related) .hotbox{fill:#f1f7ec;stroke:#adc1a9}
+.atlas-navigation-off .hotspot-scaffold{display:none}
 </style>
 </head>
 <body>
@@ -300,7 +320,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
 <footer class="footer"><details class="atlas-footer-note" open><summary>Illustration, source, and usage scope</summary><p>A curated literature guide, not an exhaustive systematic review or a unified lineage atlas. The adult mandibular outline is redrawn with reference to Gray’s Anatomy, figure 176; overlays and hotspots are schematic navigation aids, not measured cell coordinates. Check species, stage, model and evidence scope in each study. Author affiliations refer to publication time. English titles for Chinese-language records may be translated. Personal notes stay in your browser; exported copies can contain your notes.</p></details><div>Literature and framework updated 2026-10-05<br>V3 · Anatomy + overall framework<br>Single file · No external scripts · Does not connect online automatically</div></footer>
 </div>
 <button class="btn exit-showcase" data-action="showcase">Exit demonstration ×</button>
-<dialog id="scope-dialog" aria-labelledby="scope-title"><div class="study-dialog-toolbar"><span>Scope and selection</span><button class="btn small" data-revision-action="close-scope">Close</button></div><div class="dialog-body"><h2 id="scope-title">What does this map cover?</h2><p>This is a focused reading map assembled through Chinese- and English-language topic searches, paper reading and citation tracking. This revision checks bibliography and selected results using PubMed/Europe PMC, Crossref and journal sources. No preregistered systematic-review search or duplicate screening was performed.</p><p>Dental–periodontal, neurovascular, immune and some repair topics remain incompletely covered. Few entries indicate limited map coverage, not absence of research. Comparative tissues and theory sources are labeled separately.</p><p>96 main records plus 7 framework sources: 103 independent references; 2 preprints hidden by default.</p><p class="note-status">1.1.1 · 2026-10-05</p></div></dialog>
+<dialog id="scope-dialog" aria-labelledby="scope-title"><div class="study-dialog-toolbar"><span>Scope and selection</span><button class="btn small" data-revision-action="close-scope">Close</button></div><div class="dialog-body"><h2 id="scope-title">What does this map cover?</h2><p>This is a focused reading map assembled through Chinese- and English-language topic searches, paper reading and citation tracking. This revision checks bibliography and selected results using PubMed/Europe PMC, Crossref and journal sources. No preregistered systematic-review search or duplicate screening was performed.</p><p>Dental–periodontal, neurovascular, immune and some repair topics remain incompletely covered. Few entries indicate limited map coverage, not absence of research. Comparative tissues and theory sources are labeled separately.</p><p>96 main records plus 7 framework sources: 103 independent references; 2 preprints hidden by default.</p><p class="note-status">1.1.2 · 2026-10-05</p></div></dialog>
 <dialog id="study-dialog" class="study-dialog" aria-label="Paper details"><div class="study-dialog-toolbar"><span>Paper details</span><button class="btn small" data-action="close-study">Close details and return to list ×</button></div><div id="study-dialog-content"></div></dialog>
 <dialog id="region-evidence-dialog" class="region-evidence" aria-labelledby="region-evidence-title"><div class="study-dialog-toolbar"><span>Evidence of relationships in the figure</span><button class="btn small" data-action="close-region-evidence">Close and return to research map ×</button></div><div id="region-evidence-content"></div></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div><div class="tooltip" id="tooltip"></div>
@@ -18865,7 +18885,7 @@ html{font-family:"Segoe UI",Calibri,Arial,sans-serif}
 </script>
 <script type="application/json" id="revision-data">
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "date": "2026-10-05",
   "labels": {
     "copyTextLabel": "Text to copy",
@@ -19402,8 +19422,8 @@ function regionLocalSVG(){
  return `<svg class="local-diagram" viewBox="0 0 320 220" role="img" aria-labelledby="region-local-title region-local-desc"><title id="region-local-title">${a('Bone and periosteum tissue diagram','Bone and periosteum tissue diagram')}</title><desc id="region-local-desc">${a('Fibrous layer, osteogenic layer and bone as positional references.','Fibrous layer, osteogenic layer and bone as positional references.')}</desc><g class="diagram-shapes">${shapes}</g><g class="diagram-labels">${labels}</g></svg>`;
 }
 function hotspot(r,x,y,lx,ly,w,side='left',tissue=false){
- const old=hotspotLegacy(r,x,y,lx,ly,w,side,tissue),opening=old.match(/^<g[^>]+>/)[0],title=old.match(/<title>[\s\S]*?<\/title>/)[0],leader=old.match(/<path class="leader"[^>]+\/>/)[0],label=old.slice(old.indexOf('<rect class="hotbox"'),old.indexOf('<circle class="halo"')),marker=old.slice(old.indexOf('<circle class="halo"'),old.lastIndexOf('</g>'));
- return `<g class="hotspot-scaffold">${leader}${opening}${title}${label}</g><g class="hotspot-anchor" data-region="${r}"><circle class="anchor-hit" cx="${x}" cy="${y}" r="31" fill="transparent" pointer-events="all"/>${marker}</g></g>`;
+ const old=hotspotLegacy(r,x,y,lx,ly,w,side,tissue),opening=old.match(/^<g[^>]+>/)[0],title=old.match(/<title>[\s\S]*?<\/title>/)[0],leader=old.match(/<path class="leader"[^>]+\/>/)[0].replace('<path class="leader"','<path class="leader" fill="none" stroke="'+(tissue?'#b49b78':'#90a99b')+'" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"'),label=old.slice(old.indexOf('<rect class="hotbox"'),old.indexOf('<circle class="halo"')),marker=old.slice(old.indexOf('<circle class="halo"'),old.lastIndexOf('</g>'));
+ return `<g class="hotspot-scaffold${tissue?' tissue':''}">${leader}${opening}${title}${label}</g><g class="hotspot-anchor" data-region="${r}"><circle class="anchor-hit" cx="${x}" cy="${y}" r="31" fill="transparent" pointer-events="all"/>${marker}</g></g>`;
 }
 function clearCopyFeedback(){for(const id of ['study-dialog','region-evidence-dialog','scope-dialog']){const d=document.getElementById(id);d?.querySelector('[data-copy-status]')?.remove();}}
 for(const id of ['study-dialog','region-evidence-dialog','scope-dialog'])document.getElementById(id)?.addEventListener('close',clearCopyFeedback);

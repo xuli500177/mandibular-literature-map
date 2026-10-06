@@ -57,6 +57,10 @@ ok(/Two months|2月龄/.test(run('byId.R33.modelContexts[0].stageLabel')),'R33 c
 for(const id of ['R95','R96'])ok(run(`regionalById.${id}.site!==byId.${id}.boundary`),id+' site separate from conclusion scope');
 for(const [region,cfg] of Object.entries(regional.regions)){run(`S.studyRegion=${JSON.stringify(region)}`);const diagram=run(`regionSketchSVG(${JSON.stringify(cfg.kind)})`);ok(diagram.includes('diagram-labels')&&diagram.includes('<tspan'),region+' width-aware text layer');ok(diagram.indexOf('diagram-shapes')<diagram.indexOf('diagram-labels'),region+' geometry behind labels');}
 const mapHit=run("hotspot('alveolar',430,330,30,230,240)");ok(mapHit.includes('hotspot-scaffold')&&mapHit.includes('anchor-hit'),'Decorative leader separate from label and marker targets');
+ok(/<path class="leader"[^>]*fill="none"/.test(mapHit),'Leader has no filled polygon even without CSS');
+ok(/<path class="leader"[^>]*stroke="#[0-9a-f]+"/.test(mapHit),'Leader has its own fallback stroke');
+ok(/\.hotspot-scaffold>\.leader\{[^}]*fill:none;[^}]*stroke:/.test(html),'Leader style matches the actual scaffold');
+ok(/\.atlas-navigation-off \.hotspot-scaffold\{display:none\}/.test(html),'Bony-contour mode hides complete navigation groups');
 loc=new URL('https://example.org/map/');run('routeChanged({type:"hashchange"})');eq(run('S.view'),'map');ok(!elem('study-dialog').open,'Empty hash closes dialog');eq(json('S.notes'),oldNotes,'Empty route preserves notes');
 visit('#lens=coordination');const start=historyIndex;run("openSystemRegion('periosteum');");eq(historyIndex,start+1,'One click creates one history entry');eq(json('[S.view,S.studyFramework]'),['region','coordination']);
 (async()=>{run("S.view='region';selectPaper('R18');");const d=elem('study-dialog'),focus=node('copy-button');focus.host=d;document.activeElement=focus;clipboard.writeText=async()=>{throw Error('denied')};eq(await run("copyText('test citation',RT.citationCopied)"),true,'Fallback copy inside modal');eq(document.selectedHost,d,'Copy host is active dialog');eq(document.activeElement,focus,'Copy restores focus');ok(d.querySelector('[data-copy-status]')?.textContent,'Dialog copy status');
